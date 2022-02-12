@@ -1,0 +1,23 @@
+{
+  "name": "Blinkit-Clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arai5563/Blinkit-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arai5563/Blinkit-Clone/issues"
+  },
+  "homepage": "https://github.com/arai5563/Blinkit-Clone#readme",
+  "dependencies": {
+    "express-mongoose": "^0.1.0"
+  }
+}

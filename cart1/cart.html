@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Blinkit-yellow-app-icon.svg/1200px-Blinkit-yellow-app-icon.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../navbar/nav.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="./cart.css">
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+    <nav> 
+        <div class="logo">
+            <a href="/body/body.html"><img class="blinkit-logo" src="../images/blinkit-logo.svg" alt=""></a>
+        </div>
+             <ul class="links">
+            <li id="locate">
+                Location
+                <span class="material-icons-outlined">
+                location_on
+                </span>
+            </li>
+            <li>
+                <div class="searchBox">
+                    <input type="text" class="searchText" placeholder="Search...">
+                    <a class="searchBtn" href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </li>
+            <li><a href="/Category/category.html">Category</a></li>
+            <li><a href="#profile">profile</a></li>
+            <li><a href="../cart1/cart.html">cart <span class="nav_total"><div></div></span></a></li>
+        </ul>
+      
+   
+       
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+
+    <div id="main-cont">
+        <div id="wrap">
+
+            <div id="basket">
+                <div>
+                    <p style="margin-top: 100px;">Your Basket <span id="total"></span></p>
+                </div>
+            </div>
+
+            <div>
+                <div style="border: 0.5px solid #E0E0E0;"></div>
+            </div>
+
+            <div id="cart-table">
+
+                <div class="small-container">
+
+                    <div id="dis-head">
+                        <div style="text-align: right;">Item</div>
+                        <div style="margin-left: 50px;text-align: right;">Description</div>
+                        <div style="margin-left: 50px;text-align: right;">Unit Price</div>
+                        <div style="margin-left: 40px;text-align: center;">Quantity</div>
+                        <div style="margin-left: 50px;text-align: right;">Total Price</div>
+                        <div style="margin-left: 50px;text-align: right;">Delete</div>
+                    </div>
+
+
+
+                    <table id="container">
+
+                        <div>
+                            <tr id="table-head">
+                                <th>Item</th>
+                                <th>Description</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                                <th>Total Price</th>
+                            </tr>
+                        </div>
+
+                    </table>
+
+                    <hr>
+                </div>
+
+            </div>
+
+            <div id="mid-check">
+                <div>
+
+
+                    <div id="promo">
+                        <input type="text" placeholder="Enter Promo Code" id="apply_code">
+                        <button class="promo_btn" onclick="apply()"><strong>Apply</strong></button>
+                    </div>
+
+
+                    <div id="goTohome">
+                        <a href="../Productpage/productpage.html">
+                            <button id="goTohome-btn">
+                                Shop More &nbsp;
+                                <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div id="checkout">
+                    <div id="right">
+
+                        <div id="checkout1">
+                            <label style="font-weight :700;">Subtotal (<span id="sub_cnt"></span> ) :</label>
+                            <input type="number" id="total_checkout" readonly="readonly">
+
+
+                        </div>
+                        <hr>
+
+                        <div id="checkout">
+                            <a href="../payment/payment.html"><button class="check_btn">Checkout Now</button></a>
+                        </div>
+
+                        <hr>
+                        <div id="cards">
+                            <div><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png" alt="">
+                            </div>
+                            <div><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt=""></div>
+                            <div><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt=""></div>
+                            <div><img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt=""></div>
+                            <div><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt=""></div>
+                            <div><img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+                            </div>
+                            <div><img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+                            </div>
+                            <div><img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div>
+                            <i style="font-size:15px; color:rgb(194, 188, 188);" class="fa">&#xf073; Congrats! You can
+                                pay for this order in easy installments</i>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer></footer>
+</body>
+<div id="footer"></div>
+
+</html>
+<script src="../navbar/nav.js"></script>
+<script src="./cart.js"></script>
+
+
+<script type="module"> 
+    // .....................FOOTER IMPORT................................
+    import Footer from "../import/footer-i.js";
+    console.log(Footer);
+
+    let footer = document.getElementById("footer");
+
+    footer.innerHTML = Footer();
+
+    // <!-- ..............................SECOND CARSOULES...................................... -->
+  
+ </script> -->
