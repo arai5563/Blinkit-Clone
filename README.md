@@ -19,23 +19,16 @@ With our best efforts, we tried to clone the whole website replicating same UI a
 ## Snapshots 📷
 - Home Page
 
-![home](https://github.com/arai5563/Unsplash-Clone/blob/5ba6aa958299349e6b239eda493c01cbd006a5ca/Clone-Unsplash.com/screenshot/homeimage.png)
+![home](https://github.com/arai5563/Blinkit-Clone/blob/23cf88712507cd51a3f9f483050e46e5aa7ee34e/ss/home.png)
 
-- Result Page
-
-![](https://github.com/arai5563/Unsplash-Clone/blob/5ba6aa958299349e6b239eda493c01cbd006a5ca/Clone-Unsplash.com/screenshot/Screenshot%20(278).png)
 
 <br/> <br/> 
 
 
 
-## How To Run The Project
-1. First click on https://amitunsplashclone.netlify.app to reach the home page.
-2. Enter text in input box to search the images.
-3. Click on search icon.
 
 ## End Notes 🧾
-In this project I tried to replicate Unsplash website with the best of my learnings.
+In this project we tried to replicate Blinkit.com website with the best of our learnings.
 
 
 ## Limitations
